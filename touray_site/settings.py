@@ -25,9 +25,9 @@ MEDIA_URL = ''
 SECRET_KEY = "django-insecure-ky!xz*t4c1*@19yu@f@1_)dh_uk(^8jny81px5pdz*66(zf1y6"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['touray-railway-production.up.railway.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -80,8 +80,12 @@ WSGI_APPLICATION = "touray_site.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'jassongtouray',
+        'USER': 'postgres',
+        'PASSWORD': 'Bs79SK-=bj',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
