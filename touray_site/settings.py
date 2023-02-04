@@ -25,9 +25,9 @@ MEDIA_URL = ''
 SECRET_KEY = "django-insecure-ky!xz*t4c1*@19yu@f@1_)dh_uk(^8jny81px5pdz*66(zf1y6"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['touray-railway-production.up.railway.app']
 
 
 # Application definition
